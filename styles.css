@@ -1,0 +1,168 @@
+
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --success-color: #28a745;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            flex-basis: calc(33.333% - 1rem);
+            background-color: white;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .step {
+            flex-basis: calc(25% - 1rem);
+            text-align: center;
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .doctors {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .doctor {
+            flex-basis: calc(25% - 1rem);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .doctor-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            flex-basis: calc(33.333% - 1rem);
+            background-color: white;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .register {
+            text-align: center;
+            background-color: var(--success-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex-basis: calc(25% - 1rem);
+        }
+
+        @media (max-width: 768px) {
+            .services, .steps, .doctors, .testimonials {
+                flex-direction: column;
+            }
+
+            .service, .step, .doctor, .testimonial {
+                flex-basis: 100%;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-section {
+                flex-basis: 100%;
+                margin-bottom: 1rem;
+            }
+        }
